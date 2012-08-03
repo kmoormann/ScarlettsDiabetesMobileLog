@@ -1,0 +1,23 @@
+@model ScarlettsLog.Mobile.Models.LogModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>LogModel</legend>
+
+    <div class="display-label">LogDate</div>
+    <div class="display-field">@String.Format("{0:g}", Model.LogDate)</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

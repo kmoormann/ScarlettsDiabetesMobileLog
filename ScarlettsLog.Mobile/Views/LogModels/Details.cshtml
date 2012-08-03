@@ -1,0 +1,20 @@
+@model ScarlettsLog.Mobile.Models.LogModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>LogModel</legend>
+
+    <div class="display-label">LogDate</div>
+    <div class="display-field">@String.Format("{0:g}", Model.LogDate)</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.LogModelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

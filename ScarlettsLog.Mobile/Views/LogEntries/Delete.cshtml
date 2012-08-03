@@ -1,0 +1,38 @@
+@model ScarlettsLog.Mobile.Models.LogEntry
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>LogEntry</legend>
+
+    <div class="display-label">EntryTime</div>
+    <div class="display-field">@String.Format("{0:g}", Model.EntryTime)</div>
+
+    <div class="display-label">GlucoseNumber</div>
+    <div class="display-field">@Model.GlucoseNumber</div>
+
+    <div class="display-label">GlucosePrickLocation</div>
+    <div class="display-field">@Model.GlucosePrickLocation</div>
+
+    <div class="display-label">NovalogDosage</div>
+    <div class="display-field">@String.Format("{0:F}", Model.NovalogDosage)</div>
+
+    <div class="display-label">LantusDosage</div>
+    <div class="display-field">@String.Format("{0:F}", Model.LantusDosage)</div>
+
+    <div class="display-label">InjectionLocation</div>
+    <div class="display-field">@String.Format("{0:F}", Model.InjectionLocation)</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

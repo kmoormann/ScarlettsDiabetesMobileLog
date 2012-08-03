@@ -1,0 +1,65 @@
+@model IEnumerable<ScarlettsLog.Mobile.Models.LogEntry>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            EntryTime
+        </th>
+        <th>
+            GlucoseNumber
+        </th>
+        <th>
+            GlucosePrickLocation
+        </th>
+        <th>
+            NovalogDosage
+        </th>
+        <th>
+            LantusDosage
+        </th>
+        <th>
+            InjectionLocation
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LogEntryId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LogEntryId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LogEntryId })
+        </td>
+        <td>
+			@String.Format("{0:g}", item.EntryTime)
+        </td>
+        <td>
+			@item.GlucoseNumber
+        </td>
+        <td>
+			@item.GlucosePrickLocation
+        </td>
+        <td>
+			@String.Format("{0:F}", item.NovalogDosage)
+        </td>
+        <td>
+			@String.Format("{0:F}", item.LantusDosage)
+        </td>
+        <td>
+			@String.Format("{0:F}", item.InjectionLocation)
+        </td>
+    </tr>
+}
+
+</table>
+
+

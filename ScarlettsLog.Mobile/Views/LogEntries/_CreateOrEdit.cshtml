@@ -1,0 +1,52 @@
+@model ScarlettsLog.Mobile.Models.LogEntry
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.EntryTime)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.EntryTime)
+    @Html.ValidationMessageFor(model => model.EntryTime)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.GlucoseNumber)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.GlucoseNumber)
+    @Html.ValidationMessageFor(model => model.GlucoseNumber)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.GlucosePrickLocation)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.GlucosePrickLocation)
+    @Html.ValidationMessageFor(model => model.GlucosePrickLocation)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.NovalogDosage)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.NovalogDosage)
+    @Html.ValidationMessageFor(model => model.NovalogDosage)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.LantusDosage)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.LantusDosage)
+    @Html.ValidationMessageFor(model => model.LantusDosage)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.InjectionLocation)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.InjectionLocation)
+    @Html.ValidationMessageFor(model => model.InjectionLocation)
+</div>
+

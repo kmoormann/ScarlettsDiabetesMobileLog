@@ -1,0 +1,35 @@
+@model IEnumerable<ScarlettsLog.Mobile.Models.LogModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            LogDate
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LogModelId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LogModelId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LogModelId })
+        </td>
+        <td>
+			@String.Format("{0:g}", item.LogDate)
+        </td>
+    </tr>
+}
+
+</table>
+
+

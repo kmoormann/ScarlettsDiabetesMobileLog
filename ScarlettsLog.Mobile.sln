@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScarlettsLog.Mobile", "ScarlettsLog.Mobile\ScarlettsLog.Mobile.csproj", "{A871D326-D915-4633-BF59-3089F6AE0067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScarlettsLog.Mobile.Tests", "ScarlettsLog.Mobile.Tests\ScarlettsLog.Mobile.Tests.csproj", "{17711163-F453-4B31-8723-7C1B421E730F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17711163-F453-4B31-8723-7C1B421E730F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17711163-F453-4B31-8723-7C1B421E730F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17711163-F453-4B31-8723-7C1B421E730F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17711163-F453-4B31-8723-7C1B421E730F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A871D326-D915-4633-BF59-3089F6AE0067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A871D326-D915-4633-BF59-3089F6AE0067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A871D326-D915-4633-BF59-3089F6AE0067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A871D326-D915-4633-BF59-3089F6AE0067}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

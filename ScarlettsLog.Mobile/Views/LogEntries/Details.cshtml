@@ -1,0 +1,35 @@
+@model ScarlettsLog.Mobile.Models.LogEntry
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>LogEntry</legend>
+
+    <div class="display-label">EntryTime</div>
+    <div class="display-field">@String.Format("{0:g}", Model.EntryTime)</div>
+
+    <div class="display-label">GlucoseNumber</div>
+    <div class="display-field">@Model.GlucoseNumber</div>
+
+    <div class="display-label">GlucosePrickLocation</div>
+    <div class="display-field">@Model.GlucosePrickLocation</div>
+
+    <div class="display-label">NovalogDosage</div>
+    <div class="display-field">@String.Format("{0:F}", Model.NovalogDosage)</div>
+
+    <div class="display-label">LantusDosage</div>
+    <div class="display-field">@String.Format("{0:F}", Model.LantusDosage)</div>
+
+    <div class="display-label">InjectionLocation</div>
+    <div class="display-field">@String.Format("{0:F}", Model.InjectionLocation)</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.LogEntryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

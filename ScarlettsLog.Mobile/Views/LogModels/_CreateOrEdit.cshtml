@@ -1,0 +1,12 @@
+@model ScarlettsLog.Mobile.Models.LogModel
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.LogDate)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.LogDate)
+    @Html.ValidationMessageFor(model => model.LogDate)
+</div>
+
